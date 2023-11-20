@@ -1,0 +1,71 @@
+/* style the main page content */
+body {
+    background-color: deeppink;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1{
+    color:antiquewhite;
+}
+
+h2{
+    color:greenyellow
+}
+
+#heading{
+    font-family: Arial;
+    background-color: red;
+    color: white;
+    	}
+
+.sports-history{
+    		color: orange;
+}
+    	
+.computing-history{
+    	color: green;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .split {
+    flex: 50%;
+    text-align: left;
+    padding: 15px;
+  }
+
+  .split img {
+    max-width: 100%;
+    flex: 50%;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 45%;
+    background-color: forestgreen;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  /* Media Query for Small Screens */
+  @media (max-width: 480px) {
+    .container {
+      flex-direction: column;
+    }
+    .split{
+      order: 2;
+    }
+
+    .split img{
+      flex-wrap: wrap;
+      width: 100%;
+      order: 1;
+    }
+  }
